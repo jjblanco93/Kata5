@@ -1,6 +1,7 @@
 package moneycalculator.model;
 
 public class Currency {
+    
     private final String name;
     private final String symbol;
     private final String code;

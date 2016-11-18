@@ -1,6 +1,5 @@
 package moneycalculator;
 
-
 import java.awt.Menu;
 import java.awt.MenuBar;
 import java.awt.MenuItem;
@@ -13,7 +12,7 @@ import moneycalculator.ui.swing.SwingMoneyDisplay;
 public class MainFrame extends JFrame{
 
     public MainFrame() {
-        setTitle("Money Calculator");
+        setTitle("Money Calculator v1.1");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(400, 400);
         setLocationRelativeTo(null);
@@ -44,7 +43,7 @@ public class MainFrame extends JFrame{
         return new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("Execute calculate...");
+                System.out.println("Executing calculate...");
             }
         };
     }
@@ -53,5 +52,5 @@ public class MainFrame extends JFrame{
         SwingMoneyDisplay panel = new SwingMoneyDisplay();
         return panel;
     }
-    
+   
 }

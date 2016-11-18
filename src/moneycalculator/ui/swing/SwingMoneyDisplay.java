@@ -5,15 +5,13 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import moneycalculator.ui.MoneyDisplay;
 
-
 public class SwingMoneyDisplay extends JPanel implements MoneyDisplay {
 
     public SwingMoneyDisplay() {
         setLayout(new FlowLayout());
         add(title());
         add(amount());
-        add(currency());
-        
+        add(currency()); 
     }
     
     private JLabel title() {
@@ -30,4 +28,5 @@ public class SwingMoneyDisplay extends JPanel implements MoneyDisplay {
         JLabel jLabel = new JLabel("€");
         return jLabel;
     }
+    
 }
